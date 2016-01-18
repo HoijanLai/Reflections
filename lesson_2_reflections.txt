@@ -1,0 +1,14 @@
+
+1.What happens when you initialize a repository? 
+  Why do you need to do it?
+
+  1)Git bash gives information about how the repository is created.
+  2)To use the Git features, a repository is needed.
+
+
+
+2.How is the staging area different from the working directory and the repository?
+  What value do you think it offer?
+
+  1)It acts as a post office or express between working directory and repository 
+  2)It allows several files be committed together as one single logical change.
