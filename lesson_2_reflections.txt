@@ -12,3 +12,55 @@
 
   1)It acts as a post office or express between working directory and repository 
   2)It allows several files be committed together as one single logical change.
+
+
+
+3.How can you use the staging area to make sure you have one commit per logical change?
+
+  Here're those useful commands:
+
+  $git add [file] ## add files to staging area 
+
+  $git commit ## commit changes
+
+  $git diff ## compare between working directory and staging area
+
+  $git diff --staged ##compare between staging area and the latest commit, to make sure the commit is logical
+
+
+
+4.What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+  
+  When multiple versions at the same stage for different parallel features are needed
+
+  By using $git branch [name of a new branch], a new parallel version is created, changes in this version does not happen in the original version, i.e. the master branch.
+
+
+
+5.How do the diagrams help you visualize the branch structure?
+  
+  Using $git log --graph (--oneline) to see a diagram of the commit workflow.
+  
+  Diagrams specifys the workflow of how the project goes and where a certain branch is created.
+
+ 5.1.More about 'Detached Head'
+  
+    If a commits doesn't belong to any branches, a message would pop and say you're currently in 'Detached Head' stage. You can use '$git branch -b new_branch_name' to create a branch for this commit.
+ 5.2.Instructor Notes
+
+    If a branch is deleted and leaves some commits unreachable from existing branches, those commits will continue to be accessible by commit id, until Git’s garbage collection runs. This will happen automatically from time to time, unless you actively turn it off. You can also run this process manually with git gc.
+
+
+
+6.What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+  
+  Changes in both branches are introduced in the merged files with some rules.
+  $git merge [target branch] [guest branch]
+
+  It's desirable to be able to track the parent of each commit after merging, diagram help this.
+  
+  useful command:
+   $git show [id] #to see difference between a commit and its parent, id is the most recent by default
+   $git branch -d [branch_name] #to delete a branch after merging
+ 
+
