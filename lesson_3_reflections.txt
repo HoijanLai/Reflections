@@ -1,0 +1,7 @@
+1.When would you want to use a remote repository rather than keeping all your work local?
+  
+  When sharing and cooperating is needed.
+  command:
+  $git remote (-v)   ##see remote list, -v means verbose
+  $git remote add [name] [URL]   ##create a new remote named name with url URL.
+  $git push [remote-name] [local-branch] 
