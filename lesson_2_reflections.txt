@@ -46,6 +46,7 @@
  5.1.More about 'Detached Head'
   
     If a commits doesn't belong to any branches, a message would pop and say you're currently in 'Detached Head' stage. You can use '$git branch -b new_branch_name' to create a branch for this commit.
+
  5.2.Instructor Notes
 
     If a branch is deleted and leaves some commits unreachable from existing branches, those commits will continue to be accessible by commit id, until Git’s garbage collection runs. This will happen automatically from time to time, unless you actively turn it off. You can also run this process manually with git gc.
@@ -63,4 +64,14 @@
    $git show [id] #to see difference between a commit and its parent, id is the most recent by default
    $git branch -d [branch_name] #to delete a branch after merging
  
+
+
+7.What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+  
+  Git's automatic merging is more convenient, works better when merging is applied to branches made by the same person or progammers work in consistent style.
+  But I think most of the case It may not work well, and more unpredictable.
+
+  Manually merging is more agile and controllable, allowing more delicate merging.
+
+
 
