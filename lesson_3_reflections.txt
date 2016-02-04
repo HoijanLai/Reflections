@@ -5,3 +5,17 @@
   $git remote (-v)   ##see remote list, -v means verbose
   $git remote add [name] [URL]   ##create a new remote named name with url URL.
   $git push [remote-name] [local-branch] 
+
+
+
+2.Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+ 
+  Because some changes are made by others which may cause conflict with our own version. It's a good idea to choose which to involve.
+
+
+
+3.Describe the defferences between forks, clones, and branches. When would you use one instead of another?
+
+  Forks clone repositories from others' accounts to your own account, while clones take effect between local and github. branches are certain sets of commits.
+
+  Forks allow you to introduce others' work shared online to your own account without cloning and pushing.  
