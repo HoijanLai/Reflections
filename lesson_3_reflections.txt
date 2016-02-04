@@ -1,6 +1,7 @@
 1.When would you want to use a remote repository rather than keeping all your work local?
   
   When sharing and cooperating is needed.
+
   command:
   $git remote (-v)   ##see remote list, -v means verbose
   $git remote add [name] [URL]   ##create a new remote named name with url URL.
@@ -12,6 +13,9 @@
  
   Because some changes are made by others which may cause conflict with our own version. It's a good idea to choose which to involve.
 
+  command:
+  $git pull [remote-name] [local-branch]
+
 
 
 3.Describe the defferences between forks, clones, and branches. When would you use one instead of another?
@@ -19,3 +23,15 @@
   Forks clone repositories from others' accounts to your own account, while clones take effect between local and github. branches are certain sets of commits.
 
   Forks allow you to introduce others' work shared online to your own account without cloning and pushing.  
+
+
+
+4.What is the benefit of having a copy of the last known state of the remote stored locally?
+
+  The state is the common ancestor of the local commits and commits on GitHub. It helps a lot when resolving conflicts.
+
+  command:
+  $git fetch ##fetch commits from GitHub, usually that will create a new branch.
+  $git pull [remote-name] [local-branch] ##this is equivalent to git fetch & git merge
+
+  
