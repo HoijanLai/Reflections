@@ -34,4 +34,16 @@
   $git fetch ##fetch commits from GitHub, usually that will create a new branch.
   $git pull [remote-name] [local-branch] ##this is equivalent to git fetch & git merge
 
+
+
+
+5.How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+  
+  Using email accessories and windows 'fc' command in command line
+
+  Git and Github is easier 
+
+  note: When you run git push, your the working directory, staging area & local master will simultaneously change 
+
+
   
